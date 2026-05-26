@@ -15,7 +15,7 @@ function mostrarTodo() {
     inputFraseDelDia.value;
 }
 function mostrarCarta() {
-  let carta = document.getElementById("carta");
+  let carta = document.getElementById("seccionCarta");
   let html = "";
 
   for (let i = 0; i < platosDisponibles.length; i++) {
@@ -29,6 +29,8 @@ function mostrarCarta() {
 
   carta.innerHTML = html;
 }
+
+mostrarCarta();
 
 SeccionCarta.addEventListener("", mostrarCarta);
 SeleccionarDia.addEventListener("change", mostrarTodo);
