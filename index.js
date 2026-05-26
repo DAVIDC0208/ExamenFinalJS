@@ -30,8 +30,6 @@ function mostrarCarta() {
   carta.innerHTML = html;
 }
 
-mostrarCarta();
-
 SeccionCarta.addEventListener("", mostrarCarta);
 SeleccionarDia.addEventListener("change", mostrarTodo);
 inputFraseDelDia.addEventListener("input", mostrarTodo);
